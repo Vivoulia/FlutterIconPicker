@@ -5,7 +5,7 @@ import 'FullScreenDialog.dart';
 import 'AdaptiveDialog.dart';
 import '../Helpers/ColorBrightness.dart';
 import '../IconPicker/iconPicker.dart';
-import '../IconPicker/searchBar.dart';
+import '../IconPicker/searchBar.dart' as SearchBar;
 import '../Models/IconPack.dart';
 
 class DefaultDialog extends StatelessWidget {
@@ -126,7 +126,7 @@ class DefaultDialog extends StatelessWidget {
                       ),
                     ),
                     if (showSearchBar!)
-                      SearchBar(
+                      SearchBar.SearchBar(
                         iconController: controller,
                         iconPack: iconPackMode,
                         customIconPack: customIconPack,
@@ -172,7 +172,7 @@ class DefaultDialog extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   if (showSearchBar!)
-                    SearchBar(
+                    SearchBar.SearchBar(
                       iconController: controller,
                       iconPack: iconPackMode,
                       customIconPack: customIconPack,
